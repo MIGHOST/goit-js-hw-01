@@ -2,8 +2,16 @@
 //task-5
 
 let costDelivery;
+let delivery;
 let userChoise = prompt("Input country for delivery", '');
-let delivery=userChoise.toLowerCase();
+if (userChoise === null) {
+    alert("See you next time!");
+  } else if (userChoise === "") {
+    alert("The string is empty!");
+  } else {
+    delivery = userChoise.toLowerCase()}; 
+
+
 switch (delivery) {
     case 'china':
         costDelivery = 100;
@@ -15,22 +23,24 @@ switch (delivery) {
         alert(`Delivery in ${delivery} cost ${costDelivery} credits`);
         break;
 
-    case 'australia':
+    case 'australia.toLowerCase()':
         costDelivery = 170;
         alert(`Delivery in ${delivery} cost ${costDelivery} credits`);
         break;
 
-    case 'india':
+    case 'india.toLowerCase()':
         costDelivery = 80;
         alert(`Delivery in ${delivery} cost ${costDelivery} credits`);
         break;
 
-    case 'jamaica':
+    case 'jamaica.toLowerCase()':
         costDelivery = 120;
         alert(`Delivery in ${delivery} cost ${costDelivery} credits`);
-        break;  
-    
+        break;
+
     default:
         alert("There is not delivery in your country!");
 
 };
+
+
