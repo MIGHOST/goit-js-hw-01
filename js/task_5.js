@@ -9,7 +9,7 @@ if (userChoise === null) {
   } else if (userChoise === "") {
     alert("The string is empty!");
   } else {
-    delivery = userChoise.toLowerCase()}; 
+    delivery = userChoise.toLowerCase(); 
 
 
 switch (delivery) {
@@ -43,4 +43,4 @@ switch (delivery) {
 
 };
 
-
+  }
