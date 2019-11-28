@@ -23,17 +23,17 @@ switch (delivery) {
         alert(`Delivery in ${delivery} cost ${costDelivery} credits`);
         break;
 
-    case 'australia.toLowerCase()':
+    case 'australia':
         costDelivery = 170;
         alert(`Delivery in ${delivery} cost ${costDelivery} credits`);
         break;
 
-    case 'india.toLowerCase()':
+    case 'india':
         costDelivery = 80;
         alert(`Delivery in ${delivery} cost ${costDelivery} credits`);
         break;
 
-    case 'jamaica.toLowerCase()':
+    case 'jamaica':
         costDelivery = 120;
         alert(`Delivery in ${delivery} cost ${costDelivery} credits`);
         break;
