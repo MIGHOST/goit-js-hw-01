@@ -4,23 +4,14 @@
 let userInput;
 let total = 0;
 
-while (true) {
-  userInput = +prompt('Input a number ');
-
-  if (userInput === null) {
-    break;
+do {
+  userInput = prompt('Input a number ');
+  let inputNum = Number(userInput); 
+  if (Number.isNaN(inputNum)) {
+    alert("Your input not a number");
+  } else {
+    total += inputNum;
   }
-
-  if (userInput <= 0) {
-    break;
-  }
-
-  if (userInput === NaN) {
-    total != userInput;
-    break;
-  }
-
-  total += userInput;
-}
+} while (userInput !== null);
 
 alert(`Amount = ${total}`);

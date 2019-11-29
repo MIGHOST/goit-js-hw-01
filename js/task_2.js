@@ -5,8 +5,10 @@
 
 const total = 100;
 const ordered = 20;
-total >= ordered ?
-  alert("The order is placed, the manager will contact you!") :
+if (total >= ordered) {
+  alert("The order is placed, the manager will contact you!")
+} else {
   alert("Not enough goods in stock!");
+};
 
 

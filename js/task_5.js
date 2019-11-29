@@ -1,41 +1,35 @@
 "use strict";
 //task-5
 
-let costDelivery;
-let delivery;
+const chinaPrice = 100;
+const chiliPrice = 250;
+const australiaPrice = 170;
+const indiaPrice = 80;
+const jamaicaPrice = 120;
 let userChoise = prompt("Input country for delivery", '');
 if (userChoise === null) {
     alert("See you next time!");
-  } else if (userChoise === "") {
-    alert("The string is empty!");
   } else {
-    delivery = userChoise.toLowerCase(); 
 
-
-switch (delivery) {
-    case 'china':
-        costDelivery = 100;
-        alert(`Delivery in ${delivery} cost ${costDelivery} credits`);
+switch (userChoise.toLowerCase()) {
+    case 'china':        
+        alert(`Delivery in China cost ${chinaPrice} credits`);
         break;
 
     case 'chili':
-        costDelivery = 250;
-        alert(`Delivery in ${delivery} cost ${costDelivery} credits`);
+               alert(`Delivery in Chili cost ${chiliPrice} credits`);
         break;
 
     case 'australia':
-        costDelivery = 170;
-        alert(`Delivery in ${delivery} cost ${costDelivery} credits`);
+               alert(`Delivery in Australia cost ${australiaPrice} credits`);
         break;
 
     case 'india':
-        costDelivery = 80;
-        alert(`Delivery in ${delivery} cost ${costDelivery} credits`);
+               alert(`Delivery in India cost ${indiaPrice} credits`);
         break;
 
     case 'jamaica':
-        costDelivery = 120;
-        alert(`Delivery in ${delivery} cost ${costDelivery} credits`);
+               alert(`Delivery in Jamaica cost ${jamaicaPrice} credits`);
         break;
 
     default:
